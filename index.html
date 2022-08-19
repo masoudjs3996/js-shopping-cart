@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Responsive Grocery Website Desing Tutorial</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- font awesoem cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starter    -->
+
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fas fa-shopping-basket"></i><div class="mast"> <span>M</span><span>A</span><span>S</span><span>T</span></div> </a>
+      <nav class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#features">امکانات</a>
+        <a href="#products">محصولات</a>
+        <a href="#categories">دسته بندی ها</a>
+        <a href="#review">مرور</a>
+        <a href="#blogs">وب لاگ ها </a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="جستجو کنید..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="shopping-cart">
+        <div class="box"></div>
+        <div class="total">جمع کل 760,000</div>
+        <a href="#" class="btn">وارسی</a>
+      </div>
+      <form action="" class="login-form">
+        <h3>اکنون عضو شوید</h3>
+        <input type="email" class="box" id="login-email" placeholder="ایمیل شما" />
+        <input type="password" class="box" id="login-password" placeholder="رمز عبور شما" />
+        <p>رمز خود را فراموش کرده اید! <a href="#">اینجا کلیک کنید</a></p>
+        <p>هیچ حسابی ندارید!<a href="#">ایجاد حساب</a></p>
+        <input type="submit" value="عضو شوید" class="sendbtn"  id="sendBtn" disabled/>
+      </form>
+    </header>
+
+    <!-- header section end  -->
+
+    <!-- home section start  -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>محصولات تازه و <span> ارگانیک</span> برای شما</h3>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید از صنعت چاپلورم ایپسوم متن ساختگی با
+          تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن ساختگی با تولید سادگی
+          نامفهوم از صنعت چاپ
+        </p>
+        <a href="#" class="btn">اکنون خرید کنید</a>
+      </div>
+    </section>
+
+    <!-- home section end  -->
+
+    <!-- features section start  -->
+    <section class="features" id="features">
+      <h1 class="heading">ما <span> خدمات </span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="image/feature-img-1.png" alt="" />
+          <h3>تازه و ارگانیک</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+            ایپسوم متن ساختگی با تولید سادگی نامف از صنعت چاپ
+          </p>
+          <a href="#" class="btn">ادامه مطلب</a>
+        </div>
+        <div class="box">
+          <img src="image/feature-img-2.png" alt="" />
+          <h3>تحویل رایگان</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+            ایپسوم متن ساختگی با تولید سادگی نامف از صنعت چاپ
+          </p>
+          <a href="#" class="btn">ادامه مطلب</a>
+        </div>
+        <div class="box">
+          <img src="image/feature-img-3.png" alt="" />
+          <h3>پرداخت آسان</h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+          </p>
+          <a href="#" class="btn">ادامه مطلب</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section end -->
+
+    <!-- products section start  -->
+
+    <section class="products" id="products">
+      <h1 class="heading">ما <span>محصولات</span></h1>
+      <div class="swiper product-slider" id="product-list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/product-1.png" alt="" />
+            <h3>پرتقال تازه</h3>
+            <div class="price">39,000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <!-- <i class="fas fa-star"></i> -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn addToCart" data-id="1"
+              >اضافه کردن به سبد خرید</a
+            >
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/product-2.png" alt="" />
+            <h3>پیاز تازه</h3>
+            <div class="price">14,000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn addToCart" data-id="2"
+              >اضافه کردن به سبد خرید</a
+            >
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/product-3.png" alt="" />
+            <h3>گوشت تازه</h3>
+            <div class="price">145,000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn addToCart" data-id="3"
+              >اضافه کردن به سبد خرید</a
+            >
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/product-4.png" alt="" />
+            <h3>کلم تازه</h3>
+            <div class="price">23,900</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn addToCart" data-id="4"
+              >اضافه کردن به سبد خرید</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/product-5.png" alt="" />
+            <h3>سیب زمینی تازه</h3>
+            <div class="price">14,000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn addToCart" data-id="5"
+              >اضافه کردن به سبد خرید</a
+            >
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/product-6.png" alt="" />
+            <h3>آووکادو تازه</h3>
+            <div class="price">95,700</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <!-- <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn addToCart" data-id="6"
+              >اضافه کردن به سبد خرید</a
+            >
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/product-7.png" alt="" />
+            <h3>هویج تازه</h3>
+            <div class="price">29,000</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <!-- <i class="fas fa-star"></i> -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn addToCart" data-id="7"
+              >اضافه کردن به سبد خرید</a
+            >
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/product-8.png" alt="" />
+            <h3>لیمو سبز</h3>
+            <div class="price">45,800</div>
+            <div class="stars">
+              <!-- <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn addToCart" data-id="8"
+              >اضافه کردن به سبد خرید</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- products section end -->
+
+    <!-- categories section start  -->
+
+    <section class="categories" id="categories">
+      <h1 class="heading">محصولات <span>دسته بندی</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="image/cat-1.png" alt="" />
+          <h3>سبزیجات</h3>
+          <p>تا 45% تخفیف</p>
+          <a href="#" class="btn">اکنون خرید کنید</a>
+        </div>
+        <div class="box">
+          <img src="image/cat-2.png" alt="" />
+          <h3>میوه های تازه</h3>
+          <p>تا 25% تخفیف</p>
+          <a href="#" class="btn">اکنون خرید کنید</a>
+        </div>
+        <div class="box">
+          <img src="image/cat-3.png" alt="" />
+          <h3>محصولات لبنی</h3>
+          <p>تا 15% تخفیف</p>
+          <a href="#" class="btn">اکنون خرید کنید</a>
+        </div>
+        <div class="box">
+          <img src="image/cat-4.png" alt="" />
+          <h3>گوشت تازه</h3>
+          <p>تا 70% تخفیف</p>
+          <a href="#" class="btn">اکنون خرید کنید</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- categories section end  -->
+
+    <!-- review section start  -->
+    <section class="review" id="review">
+      <h1 class="heading">مشتری ها <span>برسی</span></h1>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/pic-1.png" alt="" />
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <!-- <i class="fas fa-star"></i> -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-2.png" alt="" />
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-3.png" alt="" />
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <!-- <i class="fas fa-star"></i> -->
+              <!-- <i class="fas fa-star"></i> -->
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/pic-4.png" alt="" />
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+            </p>
+            <h3>john deo</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section end  -->
+    <!-- blogs section starts  -->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">ما <span>وبلاگ های</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="image/blog-1.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>توسط کاربر</a>
+              <a href="#"><i class="fas fa-calendar"></i> 1st may, 2021</a>
+            </div>
+            <h1>میوه و سبزیجات ارگانیک نازه</h1>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+            </p>
+            <a href="#" class="btn">ادامه مطلب</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/blog-2.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i> توسط کاربر</a>
+              <a href="#"><i class="fas fa-calendar"></i> 1st may, 2021</a>
+            </div>
+            <h1>میوه و سبزیجات تازه و ارگانیک</h1>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+            </p>
+            <a href="#" class="btn">ادامه مطلب</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/blog-3.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>توسط کاربر</a>
+              <a href="#"><i class="fas fa-calendar"></i> 1st may, 2021</a>
+            </div>
+            <h1>میوه و سبزیجات تازه و ارگانیک</h1>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+              ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+            </p>
+            <a href="#" class="btn">ادامه مطلب</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blogs section end  -->
+
+    <!-- footer section start  -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box mastbox">
+          <h3><i class="fas fa-shopping-basket"></i><div class="mast"><span>M</span><span>A</span><span>S</span><span>T</span></div></h3>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم
+            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ لورم ایپسوم متن
+            ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+        <div class="box">
+          <h3>اطلاعات تماس</h3>
+          <a href="#" class="links"
+            ><i class="fas fa-phone"></i>+123-456-7890</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-phone"></i>+111-222-3333</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-envelope"></i>masoudjsdeveloper@gmail.com</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-map-marker-alt"></i>ایران , ایلام</a
+          >
+        </div>
+        <div class="box">
+          <h3>لینک های سریع</h3>
+          <a href="#" class="links"><i class="fas fa-arrow-right"></i>خانه</a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i>امکانات</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i>محصولات</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i>دسته بندی ها</a
+          >
+          <a href="#" class="links"><i class="fas fa-arrow-right"></i>مرور</a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i>وبلاگ ها</a
+          >
+        </div>
+        <div class="box">
+          <h3>خبر نامه</h3>
+          <p>برای دریافت بروز رسانی ها عضو شوید</p>
+          <input type="email" class="email" placeholder="ایمیل شما" />
+          <input type="submit" value="اشتراک" class="btn" />
+          <img src="image/payment.png" alt="" class="payment-img" />
+        </div>
+      </div>
+      <div class="credits">
+        ساخته شده توسط <span>مسعود امیدی </span>طراح وب سایت
+      </div>
+    </section>
+    <!-- footer section end  -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
